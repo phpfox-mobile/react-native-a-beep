@@ -31,7 +31,7 @@ public class RNReactNativeABeepModule extends ReactContextBaseJavaModule {
       audioManager = (AudioManager) reactContext.getSystemService(
               reactContext.AUDIO_SERVICE);
       audioManager.loadSoundEffects();
-      audioManager.playSoundEffect(AudioManager.FX_FOCUS_NAVIGATION_RIGHT, 100);
+      audioManager.playSoundEffect(AudioManager.FX_FOCUS_NAVIGATION_RIGHT, -1);
     }
 
   @ReactMethod
