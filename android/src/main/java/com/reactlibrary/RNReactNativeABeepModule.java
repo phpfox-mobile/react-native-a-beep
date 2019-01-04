@@ -28,7 +28,7 @@ public class RNReactNativeABeepModule extends ReactContextBaseJavaModule {
 
       //toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP,150);
       //toneGen1.startTone(soundID);
-      audioManager = (AudioManager) getSystemService(
+      audioManager = (AudioManager) reactContext.getSystemService(
               reactContext.AUDIO_SERVICE);
       audioManager.playSoundEffect(AudioManager.FX_KEY_CLICK);
     }
